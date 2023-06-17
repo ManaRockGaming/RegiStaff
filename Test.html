@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>The Unofficial Regi Staff Website</title>
+<style>
+</style>
+</head>
+
+Enter password: <input id='password' type='text'  />
+<a href="index.html" onclick="javascript:return validatePass()">enter your password and click this</a>
+<script>
+function validatePass(){
+    if(document.getElementById('password').value == 'sadesss'){
+        return true;
+    }else{
+        alert('wrong password!!');
+        return false;
+    }
+}
+</script>
