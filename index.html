@@ -17,10 +17,12 @@
     {
         body {margin: 0% -10%; padding: 0% -10%;}
         .mobilefooter {color: white;}
-        .mobile-break {display: block;}
     }
 
-    .mobile-break {display: none;}
+    @media only screen and (min-width: 768px)
+    {
+        .mobile-break {display: none;}
+    }
 
     /* TOP TITLE */
     .topTitle { background-color:#006991; color: white; text-align: center; padding: 1.25%; }
@@ -33,7 +35,7 @@
 
     /* DROP DOWN NAVIGATION */
     .dropDown { display: inline-block; }
-    .dropDown-content { display: none; position: absolute; background-color: #f1f1f1; margin-top: 10px; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+    .dropDown-content { display: none; position: absolute; background-color: #f1f1f1; margin-top: 0.2%; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
     .dropDown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; font-size: 1.2vw; }
     .dropDown-content a:hover {background-color: #ddd;}
     .dropDown:hover .dropDown-content {display: block;}
