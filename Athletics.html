@@ -13,16 +13,13 @@
     body h2 { font-size: 2vw; }
     body h1 { font-size: 2.15vw; }
 
-    @media only screen and (max-width: 768px)
+    @media screen and (max-width: 768px)
     {
         body {margin: 0% -10%; padding: 0% -10%;}
-        .mobilefooter {color: white;}
-    }
-
-    @media only screen and (min-width: 768px)
-    {
         .mobile-break {display: none;}
     }
+
+    .mobilefooter {color: white;}
 
     /* TOP TITLE */
     .topTitle { background-color:#006991; color: white; text-align: center; padding: 1.25%; }
@@ -32,9 +29,10 @@
     .topNavigation a { text-align: center; color: #194867; text-decoration: none; padding: 14px 1vw; font-size: 1.2vw; }
     .topNavigation a:hover { text-decoration: underline;}
     .topNavigation a.Accountability { background-color: #B82132; color: white; }
+    .topNavigation a.Active {text-decoration: underline;}
 
     /* DROP DOWN NAVIGATION */
-    .dropDown { display: inline-block; }
+    .dropDown { display: inline-block;}
     .dropDown-content { display: none; position: absolute; background-color: #f1f1f1; margin-top: 0.2%; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
     .dropDown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; font-size: 1.2vw; }
     .dropDown-content a:hover {background-color: #ddd;}
@@ -79,46 +77,48 @@
 </head>
 <body>
 
-<navigation>
 
-    <!-- TOP TITLE -->
-    <div class="topTitle">
-        <h1>Athletics Page</h1>
-    </div>
+    <navigation>
 
-    <!-- TOP NAVIGATION -->
-    <div class="topNavigation">
-        <a href="index.html">HOME</a>
-        <a href="Admin.html">ADMIN - S1</a>
-        <a href="Provost.html">PROVOST - S2</a>
-        <a href="Operations.html">OPERATIONS - S3</a>
-        <a href="Supply.html">SUPPLY - S4</a>
-        <a href="SergeantMajor.html">SERGEANT MAJOR</a>
+        <!-- TOP TITLE -->
+        <div class="topTitle">
+            <h1>THE UNOFFICIAL REGI STAFF WEBSITE</h1>
+        </div>
     
-        <br class="mobile-break">
-
-        <div class="dropDown">
-            <a class="topLink" href="RegimentalStaff.html">REGI STAFF</a>
-            <div class="dropDown-content">
-                <a href="Documents/Regimental Staff/Regi Staff Accountability Roster.xlsx" target="_blank">Accountability</a>
-                <a href="Documents/Regimental Staff/Regi Staff Photo Roster.pdf" target="_blank">Staff Members</a>
-                <a href="https://docs.google.com/spreadsheets/d/1cibUK-t66n1VssQT1tjmtjzjjf9kEvypjSBURXZE_Yg/edit?usp=sharing" target="_blank">MRI Results</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScKlix6rYh8Q2OJ00L98DK0sHgCm30Le4axce5ByeJKUggyeg/viewform?usp=sf_link" target="_blank">MRI Form</a>
+        <!-- TOP NAVIGATION -->
+        <div class="topNavigation">
+            <a class="Active" href="index.html">HOME</a>
+            <a href="SergeantMajor.html">SERGEANT MAJOR</a>
+            <a href="Admin.html">ADMIN</a>
+            <a href="Provost.html">PROVOST</a>
+            <a href="Operations.html">OPERATIONS</a>
+            <a href="Supply.html">SUPPLY</a>
+        
+            <br class="mobile-break">
+            <br>
+    
+            <div class="dropDown">
+                <a href="RegimentalStaff.html" style="font-size: 1.2vw;">REGI STAFF</a>
+                <div class="dropDown-content">
+                    <a href="Documents/Regimental Staff/Regi Staff Accountability Roster.xlsx" target="_blank">Accountability</a>
+                    <a href="Documents/Regimental Staff/Regi Staff Photo Roster.pdf" target="_blank">Staff Members</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1cibUK-t66n1VssQT1tjmtjzjjf9kEvypjSBURXZE_Yg/edit?usp=sharing" target="_blank">MRI Results</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScKlix6rYh8Q2OJ00L98DK0sHgCm30Le4axce5ByeJKUggyeg/viewform?usp=sf_link" target="_blank">MRI Form</a>
+                </div>
+            </div>
+    
+            <div class="dropDown">
+                <a href="GeneralResources.html" style="font-size: 1.2vw;">OTHER</a>
+                <div class="dropDown-content">
+                    <a href="RegimentalCommander.html">Regimental Commander</a>
+                    <a href="DrillMaster.html">Drill Master</a>
+                    <a href="Activities.html">Activities</a>
+                    <a href="Athletics.html">Athletics</a>
+                </div>
             </div>
         </div>
-
-        <div class="dropDown">
-            <a class="topLink" href="GeneralResources.html">OTHER</a>
-            <div class="dropDown-content">
-                <a href="RegimentalCommander.html">Regimental Commander</a>
-                <a href="DrillMaster.html">Drill Master</a>
-                <a href="Activities.html">Activities</a>
-                <a href="Athletics.html">Athletics</a>
-            </div>
-        </div>
-    </div>
-
-</navigation>
+    
+    </navigation>
 
 <article>
 
