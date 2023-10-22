@@ -4,120 +4,62 @@
 <meta charset="utf-8"/>
 <title>Activities - The Unofficial Regi Staff Website</title>
 <link rel="icon" type="image/x-icon" href="Permanent Photos/Search Icon.png">
+<link rel="stylesheet" type="text/css" href="general.css" />
 <style>
     
-    /* ENTIRE BODY */
-    body {margin: 0; padding: 0; background-color: #F0F5F8;}
-    body p { font-size: 1.2vw; }
-    body h3 { font-size: 1.75vw; }
-    body h2 { font-size: 2vw; }
-    body h1 { font-size: 2.15vw; }
-
-    @media screen and (max-width: 768px)
-    {
-        body {margin: 0% -10%; padding: 0% -10%;}
-        .mobile-break {display: none;}
-    }
-
-    .mobilefooter {color: white;}
-
-    /* TOP TITLE */
-    .topTitle { background-color:#006991; color: white; text-align: center; padding: 1.25%; }
-
-    /* TOP NAVIGATION */
-    .topNavigation { overflow: hidden; background-color: white; padding: 0.75vw 0.5vw; text-align: center; }
-    .topNavigation a { text-align: center; color: #194867; text-decoration: none; padding: 14px 1vw; font-size: 1.2vw; }
-    .topNavigation a:hover { text-decoration: underline;}
-    .topNavigation a.Accountability { background-color: #B82132; color: white; }
-    .topNavigation a.Active {text-decoration: underline;}
-
-    /* DROP DOWN NAVIGATION */
-    .dropDown { display: inline-block;}
-    .dropDown-content { display: none; position: absolute; background-color: #f1f1f1; margin-top: 0.2%; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
-    .dropDown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; font-size: 1.2vw; }
-    .dropDown-content a.Active {text-decoration: underline;}
-    .dropDown-content a:hover {background-color: #ddd;}
-    .dropDown:hover .dropDown-content {display: block;}
-    .dropDown:hover .topLink {text-decoration: underline;}
-
-    /* TOP NEWS */
-    .topNews { background-color: #5B819A; color: white; text-align: center; margin: 0% 10%; padding: 10px; }
-
-    /* AI SECTION */
-    .aiSection { margin: 0% 10%; padding: 1% 0px 1% 0px; }
-    .aiSection table { border-collapse: collapse; border-style: hidden; vertical-align: top }
-    .aiSection td { border: 20px solid #F0F5F8; }
-
-    /* Document Section */
-    .documents { background-color: white; color: #194867; padding: 0px 20px;}
-    .documents a { text-decoration: none; color: #194867; }
-    .documents a:hover { text-decoration: underline; }
-
-    /* Folder Section */
-    .folders a { text-decoration: none; color: #194867; }
-    .folders a:hover { text-decoration: underline; }
-    .folders h2 { display: inline; padding: 10px; }
-
-    /* Resource Section */
-    .resources { margin: 0% 10%; }
-    .resources table { border-collapse: collapse; border-style: hidden; border-spacing: 10px; }
-    .resources td { background-color: white; color: #194867; border: 20px solid #F0F5F8; text-align: center; padding: 15px 15px; }
-    .resources td:hover { background-color: #194867; color: white; }
-    .resources td:hover a {background-color: #194867; color: white;}
-    .resources a { text-decoration: none; color: #194867; }
-    .resources a:hover { color: white; }
-
-    /* Portrait Section */
-    .portraits { background-color: #5B819A; padding: 2% 2% 1.5% 0px; font-size: 1.2vw; }
-    .portraits table { margin: 0% 10% 0% 11.5%; text-align: center;}
-    .portraits td { width: 12.5%; padding: 0% 2%; }
-    .portraits img {width: 40%;}
-    .portraits img:hover { transform:scale(1.1); }
+    /* Portrait Specific For Each Page */
+        .portraits td { width: 25%; padding: 0% 2%;}
+        .portraits img { width: 22.5%;}
 
 </style>
 </head>
 <body>
 
-    <navigation>
+<!-- TOP HEADER -->
+<header>
 
-        <!-- TOP TITLE -->
-        <div class="topTitle">
-            <h1>ACTIVITIES</h1>
-        </div>
-    
-        <!-- TOP NAVIGATION -->
-        <div class="topNavigation">
-            <a href="index.html">HOME</a>
-            <a href="SergeantMajor.html">SERGEANT MAJOR</a>
-            <a href="Admin.html">ADMIN</a>
-            <a href="Provost.html">PROVOST</a>
-            <a href="Operations.html">OPERATIONS</a>
-            <a href="Supply.html">SUPPLY</a>
+    <div class="topHeader">
+        <h1>ACTIVITIES</h1>
+    </div>
+
+</header>
+
+<!-- TOP NAVIGATION -->
+<navigation>
+
+    <div class="topNavigation">
+        <a href="index.html">HOME</a>
+        <a href="SergeantMajor.html">SERGEANT MAJOR</a>
+        <a href="Admin.html">ADMIN</a>
+        <a href="Provost.html">PROVOST</a>
+        <a href="Operations.html">OPERATIONS</a>
+        <a href="Supply.html">SUPPLY</a>
         
-            <br class="mobile-break">
-            <br>
+        <br class="mobile-Br">
+        <br>
     
-            <div class="dropDown">
-                <a href="RegimentalStaff.html" style="font-size: 1.2vw;">REGI STAFF</a>
-                <div class="dropDown-content">
-                    <a href="Documents/Regimental Staff/Regi Staff Accountability Roster.xlsx" target="_blank">Accountability</a>
-                    <a href="Documents/Regimental Staff/Regi Staff Photo Roster.pdf" target="_blank">Staff Members</a>
-                </div>
-            </div>
-    
-            <div class="dropDown">
-                <a href="GeneralResources.html" style="font-size: 1.2vw;">OTHER</a>
-                <div class="dropDown-content">
-                    <a href="RegimentalCommander.html">Regimental Commander</a>
-                    <a href="DrillMaster.html">Drill Master</a>
-                    <a class="Active" href="Activities.html">Activities</a>
-                    <a href="Athletics.html">Athletics</a>
-                </div>
+        <div class="dropDown">
+            <a href="RegimentalStaff.html" style="font-size: 1.2vw;">REGI STAFF</a>
+            <div class="dropDown-Content">
+                <a href="Documents/Regimental Staff/Regi Staff Accountability Roster.xlsx" target="_blank">Accountability</a>
+                <a href="Documents/Regimental Staff/Regi Staff Photo Roster.pdf" target="_blank">Staff Members</a>
             </div>
         </div>
     
-    </navigation>
+        <div class="dropDown">
+            <a href="GeneralResources.html" style="font-size: 1.2vw;">OTHER</a>
+            <div class="dropDown-Content">
+                <a href="RegimentalCommander.html">Regimental Commander</a>
+                <a href="DrillMaster.html">Drill Master</a>
+                <a class="Active" href="Activities.html">Activities</a>
+                <a href="Athletics.html">Athletics</a>
+            </div>
+        </div>
+    </div>
+    
+</navigation>
 
+<!-- MAIN CONTENT -->
 <article>
 
     <p></p>
@@ -129,10 +71,10 @@
                 <td colspan="4"><h2>General</h2></td>
             </tr>
             <tr>
-                <td style="width: 25%;"><a href="https://forms.gle/fmdx97ygcFxwWw4R9"  target="_blank"><img src="Permanent Photos/Photo_8.jpg" style="width: 75%; border: 2px solid; border-color: black;"><h2>Club Poster Form</h2><p>Want Your Club Poster On This Website? Fill Out This Form.</p></a></td>
-                <td style="width: 25%;"><a href="https://citadel.givepulse.com/group/114538-The-Citadels-Krause-Center-for-Leadership-and-Ethics"><img src="Permanent Photos/Photo_9.jpg" style="width: 75%; border: 2px solid; border-color: black;"><h2>GivePulse</h2><p>Volunteer In The Local Community.</p></a></td>
-                <td style="width: 25%;"></td>
-                <td style="width: 25%;"></td>
+                <td><a href="https://forms.gle/fmdx97ygcFxwWw4R9"  target="_blank"><img src="Permanent Photos/Photo_8.jpg"><h2>Club Poster Form</h2><p>Want Your Club Poster On This Website? Fill Out This Form.</p></a></td>
+                <td><a href="https://citadel.givepulse.com/group/114538-The-Citadels-Krause-Center-for-Leadership-and-Ethics"><img src="Permanent Photos/Photo_9.jpg"><h2>GivePulse</h2><p>Volunteer In The Local Community.</p></a></td>
+                <td></td>
+                <td></td>
             </tr>
 
 
@@ -140,31 +82,36 @@
                 <td colspan="4"><h2>Club Posters</h2></td>
             </tr>
             <tr>
-                <td style="width: 25%;"><a href="Documents/Activities/Chinese Club.png" target="_blank"><img src="Documents/Activities/Chinese Club.png" style="width: 75%; border: 2px solid; border-color: black;"><h2>Chinese Club</h2></a></td>
-                <td style="width: 25%;"></td>
-                <td style="width: 25%;"></td>
-                <td style="width: 25%;"></td>
+                <td><a href="Documents/Activities/Chinese Club.png" target="_blank"><img src="Documents/Activities/Chinese Club.png"><h2>Chinese Club</h2></a></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td style="width: 25%;"><a href="Documents/Activities/Living History Club.png" target="_blank"><img src="Documents/Activities/Living History Club.png" style="width: 75%; border: 2px solid; border-color: black;"><h2>Living History Club</h2></a></td>
-                <td style="width: 25%;"></td>
-                <td style="width: 25%;"></td>
-                <td style="width: 25%;"></td>
+                <td><a href="Documents/Activities/Living History Club.png" target="_blank"><img src="Documents/Activities/Living History Club.png"><h2>Living History Club</h2></a></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
     </div>
 
     <p></p>
-    
+
+</article>
+
+<!-- PORTRAITS + FOOTER -->
+<footer>
+
     <!-- PORTRAITS -->
     <div class="portraits">
         <table>
             <tr>
-                <td style="width: 25%;">
-                    <img src="Temporary Photos/C1 - Activities Officer.png" alt="Portrait of Current Activities Officer" style="width: 22.5%;">
+                <td>
+                    <img src="Temporary Photos/C1 - Activities Officer.png" alt="Portrait of Current Activities Officer">
                 </td>
-                <td style="width: 25%;">
-                    <img src="Temporary Photos/C2 - Activities NCO.png" alt="Portrait of Current Activites NCO" style="width: 22.5%;">
+                <td>
+                    <img src="Temporary Photos/C2 - Activities NCO.png" alt="Portrait of Current Activites NCO">
                 </td>
             </tr>
             <tr>
@@ -178,15 +125,11 @@
         </table>
     </div>
 
-</article>
-
-<footer>
-
     <!-- FOOTER -->
-    <div class="mobilefooter" style="background-color: #153A54;">
-        <table style="margin: 0% 10%;">
+    <div class="bottomFooter">
+        <table>
             <tr>
-                <td style="width: 100%; vertical-align: top; padding: 0px 20px 0px 20px;">
+                <td>
                     <h3>About This Website</h3>
                     <p>This website while approved by the Regimental TACs, does not fall under the jursidiction of Jenkins' Hall. This website was designed by cadets for cadets, without larger collaberation or endorsement from The Citadel. All photos belong to their respected party. Some documents and resources will require direct permission from the resource's manager, often the Cadet Officer and NCO responsible. This website is coded and managed by Cadet Conor Rom, the Regimental Provost NCO. If you would like something added to this website, document or entire page, please contact him at Crom@citadel.edu.</p>
                     <p>The Unofficial Citadel Regi Staff Website © 2023</p>
