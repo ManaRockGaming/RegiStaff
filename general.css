@@ -88,3 +88,6 @@
 		margin: 0% 10%;}
 	.bottomFooter td {
 		width: 100%; vertical-align: top; padding: 0px 20px 0px 20px;}
+
+	.bottomFooter a {
+		color: white; text-decoration: none;}
